@@ -8,10 +8,10 @@ body {
   display: flex;
   flex-direction: row; /* default */
   /* раскомментируйте по одному свойству для просмотра результатов */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   justify-content: space-evenly; /* main axis */
-  align-items: center; /* cross axis */
-  gap: 10px;
+  /* align-items: center; cross axis */
+  /* gap: 10px; */
 }
 
 .container.row {
@@ -32,7 +32,7 @@ body {
   background-color: cornflowerblue;
   border: 2px solid darkblue;
   flex-basis: 100px;
-  /* flex-grow: 1; */
+  flex-grow: 1;
   /* flex-shrink: 1; */
 }
 
@@ -41,10 +41,10 @@ body {
 }
 
 /* раскомментируйте для использования свойства flex-grow */
-/* .box:nth-child(2) {
+.box:nth-child(2) {
   flex-grow: 3;
   background-color: greenyellow;
-} */
+}
 
 /* раскомментируйте для использования свойства flex-shrink */
 /* .box:nth-child(2) {
@@ -53,7 +53,7 @@ body {
 } */
 
 /* раскомментируйте для использования свойства align-self */
-.box:nth-child(2) {
+/* .box:nth-child(2) {
   align-self: flex-start;
   background-color: greenyellow;
-}
+} */
