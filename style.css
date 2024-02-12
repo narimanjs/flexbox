@@ -8,10 +8,10 @@ body {
   display: flex;
   flex-direction: row; /* default */
   /* раскомментируйте по одному свойству для просмотра результатов */
-  /* flex-wrap: wrap;
-  justify-content: space-evenly; /* main axis */
-  /* align-items: center; cross axis */
-  /* gap: 10px; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .container.row {
@@ -41,10 +41,10 @@ body {
 }
 
 /* раскомментируйте для использования свойства flex-grow */
-.box:nth-child(2) {
+/* .box:nth-child(2) {
   flex-grow: 3;
   background-color: greenyellow;
-}
+} */
 
 /* раскомментируйте для использования свойства flex-shrink */
 /* .box:nth-child(2) {
