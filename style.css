@@ -1,59 +1,39 @@
-body {
+body,
+ul {
+  margin: 0;
+}
+
+h1 {
   margin: 30px;
 }
 
-.container {
-  border: 3px solid red;
-  margin: 15px;
+ul {
+  list-style-type: none;
+}
+
+.menu {
+  background-color: bisque;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  height: 140px;
   display: flex;
   flex-direction: row; /* default */
-  /* раскомментируйте по одному свойству для просмотра результатов */
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.container.row {
-  /* раскомментируйте при использовании свойств align-items и align-self */
-  height: 300px;
+.logo {
+  font-size: 5rem;
 }
 
-/* выбор элемента с обоими классами: "container" и "column" */
-.container.column {
-  margin-top: 50px;
-  flex-direction: column;
-  height: 450px;
+.menu-item {
+  cursor: pointer;
+  padding: 15px 5px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in;
 }
 
-.box {
-  width: 100px;
-  height: 80px;
-  background-color: cornflowerblue;
-  border: 2px solid darkblue;
-  flex-basis: 100px;
-  flex-grow: 1;
-  /* flex-shrink: 1; */
+.menu-item:hover {
+  background-color: rgb(255, 194, 119);
 }
-
-.box:first-child {
-  background-color: brown;
-}
-
-/* раскомментируйте для использования свойства flex-grow */
-/* .box:nth-child(2) {
-  flex-grow: 3;
-  background-color: greenyellow;
-} */
-
-/* раскомментируйте для использования свойства flex-shrink */
-/* .box:nth-child(2) {
-  flex-shrink: 2;
-  background-color: greenyellow;
-} */
-
-/* раскомментируйте для использования свойства align-self */
-/* .box:nth-child(2) {
-  align-self: flex-start;
-  background-color: greenyellow;
-} */
